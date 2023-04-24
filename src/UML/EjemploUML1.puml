@@ -1,0 +1,10 @@
+@startuml
+Class Cliente{}
+
+Class Compra{}
+
+note "note ''<contenido>'' as nx" as n1
+
+Cliente"1"-->"*"Compra: realiza
+
+@enduml

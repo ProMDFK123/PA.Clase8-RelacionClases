@@ -1,0 +1,19 @@
+@startuml
+Entity Usuario{
+nickname
+email
+}
+Entity Pelicula{
+titulo
+genero
+duracion
+}
+Entity Comprobante{
+nickname
+titulo
+fechaInicio
+fechaFin
+}
+Usuario"1"-->"1..*"Pelicula:arrienda
+Usuario"1"-->"1"Comprobante:genera
+@enduml
